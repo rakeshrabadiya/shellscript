@@ -1,0 +1,89 @@
+============================================
+     📁 LINUX PRACTICAL – SET 04
+ FILE ATTRIBUTES & REGEX-BASED FILTERS
+============================================
+
+👨‍💻 Prepared by   : ghost_shell
+🏫 Institute       : /dev/hideout
+🗓️  Date           :  confidential
+📄 File Name       : 04_file_attributes_and_filters.txt
+💬 Description     : This file includes basic file permission 
+                    commands and pattern-based text filters.
+
+
+🔹 PART A: TEXT FILTER COMMANDS (REGULAR EXPRESSIONS)
+
+These commands are used to search or modify text content in files using patterns.
+
+────────────────────────────────────────────
+
+1. grep  
+🔹 Use: Find lines in a file that contain specific words.
+
+Examples:
+$ grep "hello" file.txt       → Lines with "hello"
+$ grep "^A" names.txt         → Lines starting with A
+
+────────────────────────────────────────────
+
+2. egrep  
+🔹 Use: Like grep, but supports advanced patterns (OR, (), etc.)
+
+Example:
+$ egrep "dog|cat" pets.txt    → Lines with dog or cat
+
+────────────────────────────────────────────
+
+3. fgrep  
+🔹 Use: Searches plain text (no pattern symbols like *, +)
+
+Example:
+$ fgrep "a+b" file.txt        → Matches exact text "a+b"
+
+────────────────────────────────────────────
+
+4. sed  
+🔹 Use: Replace or print text from a file.
+
+Examples:
+$ sed 's/hello/hi/' file.txt       → Replace first "hello" with "hi"
+$ sed -n '/root/p' /etc/passwd     → Show lines containing "root"
+
+────────────────────────────────────────────
+
+🔹 PART B: FILE ATTRIBUTE COMMANDS
+
+These commands are used to control access, ownership, and groups of files.
+
+────────────────────────────────────────────
+
+1. chmod (Change Permission)  
+🔹 Use: Give read/write/execute permission to users.
+
+Examples:
+$ chmod +x script.sh          → Make file executable
+$ chmod 755 file.sh           → rwxr-xr-x permission
+
+Permission Codes:
+7 = read + write + execute  
+6 = read + write  
+5 = read + execute  
+4 = read only
+
+────────────────────────────────────────────
+
+2. chown (Change Owner)  
+🔹 Use: Change file's owner or owner+group.
+
+Examples:
+$ chown yash file.txt         → Make yash the owner  
+$ chown root:admin report     → Owner = root, Group = admin
+
+────────────────────────────────────────────
+
+3. chgrp (Change Group)  
+🔹 Use: Assign file to a different group.
+
+Example:
+$ chgrp students notes.txt    → Group becomes 'students'
+

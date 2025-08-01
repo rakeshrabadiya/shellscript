@@ -1,0 +1,74 @@
+============================================
+       📁 LINUX PRACTICAL – SET 03
+            SIMPLE FILTER COMMANDS
+============================================
+
+👨‍💻 Prepared by   : ghost_shell
+🏫 Institute       : /dev/null/institute
+🗓️  Date Created  : Epoch +72hrs
+📄 File Name       : 03_simple_filters.txt
+💬 Description     : This file includes simple filter 
+                    commands in Linux used for processing 
+                    text data streams with examples.
+
+
+1. pr
+→ Converts text files for printing by adding headers, footers, and pagination.
+✦ Syntax:
+   pr [options] filename
+✦ Example:
+   $ pr -h "My Report" report.txt
+
+2. head
+→ Displays the first few lines of a file (default is 10).
+✦ Syntax:
+   head filename
+✦ Example:
+   $ head log.txt
+   $ head -n 5 notes.txt
+
+3. tail
+→ Shows the last few lines of a file (default is 10).
+✦ Syntax:
+   tail filename
+✦ Example:
+   $ tail error.log
+   $ tail -n 20 access.log
+
+4. cut
+→ Extracts specific fields or columns from a line.
+✦ Syntax:
+   cut -d 'delimiter' -f field_number filename
+✦ Example:
+   $ cut -d ',' -f 2 data.csv
+
+5. paste
+→ Joins lines of files horizontally.
+✦ Syntax:
+   paste file1 file2
+✦ Example:
+   $ paste names.txt ages.txt
+
+6. sort
+→ Sorts lines of a file alphabetically or numerically.
+✦ Syntax:
+   sort filename
+✦ Example:
+   $ sort names.txt
+   $ sort -n marks.txt
+
+7. uniq
+→ Removes duplicate adjacent lines.
+✦ Syntax:
+   uniq filename
+✦ Example:
+   $ sort data.txt | uniq
+
+8. tr
+→ Translates or deletes characters.
+✦ Syntax:
+   tr 'set1' 'set2'
+✦ Example:
+   $ echo "HELLO" | tr 'A-Z' 'a-z'
+   $ tr -d '0-9' < mixed.txt
+

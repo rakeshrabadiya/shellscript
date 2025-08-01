@@ -1,0 +1,138 @@
+============================================
+       📁 LINUX PRACTICAL – SET 02
+  HANDLING ORDINARY FILES & PROCESSES
+============================================
+
+👨‍💻 Prepared by   : ghost_shell
+🏫 Institute       : /home/ghost/academy
+🗓️  Date Created  : INIT Phase – 02
+📄 File Name       : 02_file_process.txt
+💬 Description     : This file contains essential commands 
+                    for handling files and managing 
+                    processes in Linux systems.
+
+
+1. cat
+→ Displays the contents of a file.
+✦ Syntax:
+   cat filename
+✦ Example:
+   $ cat notes.txt
+
+2. cp
+→ Copies files or directories.
+✦ Syntax:
+   cp source destination
+✦ Example:
+   $ cp file1.txt backup/file1.txt
+
+3. rm
+→ Removes (deletes) files or directories.
+✦ Syntax:
+   rm filename
+✦ Example:
+   $ rm temp.txt
+
+4. mv
+→ Moves or renames files.
+✦ Syntax:
+   mv oldname newname
+✦ Example:
+   $ mv draft.txt final.txt
+
+5. more
+→ Views long files page by page.
+✦ Syntax:
+   more filename
+✦ Example:
+   $ more bigfile.txt
+
+6. lp
+→ Sends a file to printer.
+✦ Syntax:
+   lp filename
+✦ Example:
+   $ lp report.pdf
+
+7. file
+→ Tells the type of data in a file.
+✦ Syntax:
+   file filename
+✦ Example:
+   $ file myapp
+
+8. wc
+→ Word, line, character count.
+✦ Syntax:
+   wc filename
+✦ Example:
+   $ wc mycode.sh
+
+9. od
+→ Outputs file content in octal/hex.
+✦ Syntax:
+   od filename
+✦ Example:
+   $ od -c binaryfile
+
+10. cmp
+→ Compares two files byte by byte.
+✦ Syntax:
+   cmp file1 file2
+✦ Example:
+   $ cmp version1.c version2.c
+
+11. comm
+→ Compares two sorted files line by line.
+✦ Syntax:
+   comm file1 file2
+✦ Example:
+   $ comm sorted1.txt sorted2.txt
+
+12. diff
+→ Shows line-by-line difference between files.
+✦ Syntax:
+   diff file1 file2
+✦ Example:
+   $ diff config_old.cfg config_new.cfg
+
+--THE PROCESS--
+
+1. ps
+→ Shows current running processes.
+✦ Syntax:
+   ps
+✦ Example:
+   $ ps aux
+
+2. kill
+→ Terminates a process by PID.
+✦ Syntax:
+   kill PID
+✦ Example:
+   $ kill 1234
+
+3. at
+→ Schedules a command to run once at a specific time.
+✦ Syntax:
+   at HH:MM
+✦ Example:
+   $ at 14:00
+   at> echo "Hello World" > test.txt
+   at> <Ctrl+D>
+
+4. batch
+→ Executes jobs when system load is low.
+✦ Syntax:
+   batch
+✦ Example:
+   $ batch
+   at> sh job.sh
+   at> <Ctrl+D>
+
+5. time
+→ Measures execution time of a command.
+✦ Syntax:
+   time command
+✦ Example:
+   $ time ./myscript.sh

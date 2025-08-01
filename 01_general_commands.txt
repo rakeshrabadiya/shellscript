@@ -1,0 +1,128 @@
+
+👨‍💻 Prepared by   : ghost_shell
+🏫 Institute       : Institute of Unknown SysOps
+🗓️  Date Created  : Confidential
+📄 File Name       : 01_general_commands.txt
+💬 Description     : This file contains basic Linux 
+                    general purpose and file system 
+                    commands with their syntax & examples.
+
+
+==========================
+ GENERAL PURPOSE COMMANDS
+==========================
+
+1. cal  
+→ Shows calendar of current month.  
+✦ Syntax: cal  
+✦ Example:  
+    $ cal
+
+2. date  
+→ Displays current system date and time.  
+✦ Syntax: date  
+✦ Example:  
+    $ date
+
+3. echo  
+→ Prints message to screen.  
+✦ Syntax: echo "message"  
+✦ Example:  
+    $ echo "Hello, Linux!"
+
+4. banner  
+→ Prints big banner text (needs sysvbanner).  
+✦ Syntax: banner TEXT  
+✦ Example:  
+    $ banner WELCOME
+
+5. bc  
+→ Launches calculator in terminal.  
+✦ Syntax: bc  
+✦ Example:  
+    $ bc  
+    5+3  
+    (Press Ctrl+D to exit)
+
+6. script  
+→ Records terminal session to a file.  
+✦ Syntax: script filename.txt  
+✦ Example:  
+    $ script output.txt  
+    $ exit  (to stop recording)
+
+7. passwd  
+→ Changes current user password.  
+✦ Syntax: passwd  
+✦ Example:  
+    $ passwd
+
+8. who  
+→ Shows who is logged in.  
+✦ Syntax: who  
+✦ Example:  
+    $ who
+
+9. uname  
+→ Displays system information.  
+✦ Syntax: uname  
+✦ Example:  
+    $ uname -a
+
+10. tty  
+→ Prints terminal line you're using.  
+✦ Syntax: tty  
+✦ Example:  
+    $ tty
+
+11. stty  
+→ Displays/modifies terminal line settings.  
+✦ Syntax: stty -a  
+✦ Example:  
+    $ stty -a
+
+12. exit  
+→ Exits from current shell or terminal.  
+✦ Syntax: exit  
+✦ Example:  
+    $ exit
+
+13. clear  
+→ Clears the terminal screen.  
+✦ Syntax: clear  
+✦ Example:  
+    $ clear
+
+==========================
+ FILE SYSTEM COMMANDS
+==========================
+
+14. pwd  
+→ Shows current working directory.  
+✦ Syntax: pwd  
+✦ Example:  
+    $ pwd
+
+15. cd  
+→ Changes current directory.  
+✦ Syntax: cd /path/to/folder  
+✦ Example:  
+    $ cd /home/user/Documents
+
+16. mkdir  
+→ Creates a new directory.  
+✦ Syntax: mkdir foldername  
+✦ Example:  
+    $ mkdir myfolder
+
+17. rmdir  
+→ Removes an empty directory.  
+✦ Syntax: rmdir foldername  
+✦ Example:  
+    $ rmdir myfolder
+
+18. ls  
+→ Lists files and directories.  
+✦ Syntax: ls  
+✦ Example:  
+    $ ls -la
